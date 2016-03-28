@@ -1,0 +1,75 @@
+{{!< default}}
+<section id="main-body">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<article class="{{post_class}}">
+				{{#post}}
+					<header class="post-header">
+						<h2>{{{title}}}</h2>
+						<div class="meta-info">
+							{{#author}}
+							<span class="author">
+								<i class="fa fa-user"></i>
+								<a href="{{url}}">{{name}}</a>
+							</span>
+							{{/author}}
+							<span class="date">
+								<i class="fa fa-clock-o"></i>
+								{{date format="MMM DD, YYYY"}}
+							</span>
+							<span class="comment">
+								<i class="fa fa-comment"></i>
+								<a href="{{url}}#disqus_thread">0 Comments</a>
+							</span>
+						</div>
+						{{#if image}}
+							<img class="featured-image" src="{{image}}" alt="{{{title}}}" title="{{{title}}}" />
+						{{else}}
+							<img class="featured-image" src="{{asset "images/no-image.jpg"}}" />
+						{{/if}}
+					</header>
+					
+					<section class="post-content">
+						{{content}}
+					</section>
+					
+					<footer class="post-footer">
+						{{#if "tags"}}
+						<section class="tags pull-left">
+							<i class="fa fa-tags"></i> {{tags separator=" | "}}
+						</section>
+						{{/if}}
+						
+						{{> share}}
+						<div class="clearfix"></div>
+						
+						{{> post-author}}
+						
+						<div class="clearfix"></div>
+						
+							<nav class="pagination">
+								<div>
+									{{#next_post}}
+									<a class="newer-posts-single" href="{{url}}" title="{{title}}">Next post →</a>
+									{{/next_post}}
+									
+									{{#prev_post}}
+									<a class="older-posts-single" href="{{url}}" title="{{title}}">← Previous post</a>
+									{{/prev_post}}
+											
+								</div>
+							</nav>
+								
+						<div class="clearfix"></div>
+						
+						{{> comments}}
+						
+					</footer>
+				{{/post}}
+			</article>
+		</div>
+		{{> sidebar}}
+	</div>
+</div>
+</section>

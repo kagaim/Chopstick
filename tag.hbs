@@ -1,0 +1,25 @@
+{{!< default}}
+{{! tag page header }}
+<section id="tag-header" class="tag-header {{#if tag.image}}" style="background-image: url({{tag.image}}) {{else}}" style="background-image: url({{@blog.cover}}) {{/if}}">
+	<div class="container">
+		<div class="row">
+		<div class="light-overlay"></div>
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<span>
+					A {{pagination.total}}-post collection
+				</span>
+				<h1>{{tag.name}}</h1>
+				<p class="tag-description">
+					{{#if tag.description}}
+						{{tag.description}}
+					{{/if}}
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{{! The main body post loop }}
+{{> "loop"}}

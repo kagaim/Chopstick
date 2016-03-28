@@ -1,0 +1,56 @@
+<header>
+	{{! branding }}
+	<section id="cp-branding" class="cp-branding">
+		<div class="container">
+			<div class="row">
+				{{! logo }}
+				<div class="col-xs-12 col-md-3">
+					<div class="pull-left">
+						<!-- start logo -->
+						{{#if @blog.logo}}
+						<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+						{{else}}
+						<a class="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+						{{/if}}
+						<!-- end logo -->
+					</div>
+				</div>
+				{{! Ad }}
+				<div class="col-xs-12 col-md-9">
+					<!--Start of Header Advert -->
+					
+					{{> headerad}}
+					
+					<!--End of Header Advert -->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	{{! navigation }}
+	<nav class="navbar navbar-default">
+	  <div class="container cp-navigation">
+		
+		<form class="navbar-form navbar-right cp-post-search" role="search">
+		  <div class="form-group">
+			<div class="input-group">
+			  <input type="text" class="form-control cp-search" id="search-field" placeholder="Search here...">
+			  <div class="input-group-addon cp-search-icon"><i class="glyphicon glyphicon-search"></i></div>
+			</div>
+		  </div>
+		  <div id="search-results" class="search-results"></div>
+		</form>
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cp-navbar-collapse" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		</div>
+		{{navigation}}
+		
+	  </div><!-- /.container -->
+	</nav><!-- /navigation -->
+</header>

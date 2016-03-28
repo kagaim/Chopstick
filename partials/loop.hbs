@@ -1,0 +1,88 @@
+{{! main body post loop }}
+<section id="main-body">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<div class="row">
+				{{#foreach posts}}
+					{{#if @first}}
+						<article class="col-sm-12 post-one">
+							{{#if image}}
+								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+							{{else}}
+								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+							{{/if}}
+							{{#if featured}}
+								<div class="cp-featured"><i class="glyphicon glyphicon-flash"></i></div>
+							{{/if}}
+							<div class="post-content">
+								{{#if "tags"}}
+									<div class="tags">{{tags separator=" | "}}</div>
+								{{/if}}
+								<div class="postone-title">	
+									<h2><a href="{{url}}" alt="{{{title}}}" title="{{{title}}}">{{{title}}}</a></h2>
+								</div>
+								<div class="meta-info">
+									{{#author}}
+									<span class="author">
+										<i class="fa fa-user"></i>
+										<a href="{{url}}">{{name}}</a>
+									</span>
+									{{/author}}
+									<span class="date">
+										<i class="fa fa-clock-o"></i>
+										{{date format="MMM DD, YYYY"}}
+									</span>
+									<span class="comment">
+										<i class="fa fa-comment"></i>
+										<a href="{{url}}#disqus_thread">0 Comments</a>
+									</span>
+								</div>
+							</div>
+						</article>
+					{{else}}
+						<article class="col-sm-12 post-other-list">
+							<div class="row">
+								<div class="col-sm-4 post-image">
+									{{#if image}}
+										<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+									{{else}}
+										<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+									{{/if}}
+									{{#if featured}}
+										<div class="cp-featured"><i class="glyphicon glyphicon-flash"></i></div>
+									{{/if}}
+								</div>
+								<div class="col-sm-8 post-content">
+									<h3><a href="{{url}}" alt="{{{title}}}" title="{{{title}}}">{{{title}}}</a></h3>
+									<div class="post-excerpt">
+										<p>{{excerpt characters="120"}}&hellip;</p>
+									</div>
+									<div class="meta-info">
+										{{#author}}
+										<span class="author">
+											<i class="fa fa-user"></i>
+											<a href="{{url}}" title="{{name}}" alt="{{name}}">{{name}}</a>
+										</span>
+										{{/author}}
+										<span class="date">
+											<i class="fa fa-clock-o"></i>
+											{{date format="MMM DD, YYYY"}}
+										</span>
+										<span class="comment">
+											<i class="fa fa-comment"></i>
+											<a href="{{url}}#disqus_thread">0 Comments</a>
+										</span>
+									</div>
+								</div>
+							</div>
+						</article>
+					{{/if}}
+				{{/foreach}}
+			</div>
+			{{pagination}}
+		</div>
+		{{> sidebar}}
+	</div>
+</div>
+</section>

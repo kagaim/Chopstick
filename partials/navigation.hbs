@@ -1,0 +1,8 @@
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="cp-navbar-collapse">
+	<ul class="nav navbar-nav">
+		{{#foreach navigation}}
+			<li class="{{slug}} {{#if current}}active{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+		{{/foreach}}
+	</ul>
+</div><!-- /.navbar-collapse -->

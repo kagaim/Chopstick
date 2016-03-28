@@ -1,0 +1,32 @@
+{{!< default}}
+<section id="main-body">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<article class="{{post_class}}">
+				{{#post}}
+					
+					<header class="post-header">
+						<h2>{{{title}}}</h2>
+						
+						{{#if image}}
+							<img src="{{image}}" alt="{{{title}}}" title="{{{title}}}" />
+						{{/if}}
+					</header>
+					
+					<section class="post-content">
+						{{content}}
+					</section>
+					
+					<footer class="post-footer">
+						<div class="clearfix"></div>
+						{{> share}}
+						<div class="clearfix"></div>
+					</footer>
+				{{/post}}
+			</article>
+		</div>
+		{{> sidebar}}
+	</div>
+</div>
+</section>

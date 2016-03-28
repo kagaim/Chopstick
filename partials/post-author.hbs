@@ -1,0 +1,34 @@
+{{! author profile }}
+{{#author}}
+<section class="cp-author">
+	<div class="row">
+		<div class="col-md-12 author-img" {{#if cover}} style="background-image: url({{cover}});" {{/if}}>
+			{{#if image}}
+				<a href="{{url}}" alt="{{name}}" title="{{name}}"><img class="author-img-avatar" src="{{image}}" alt="{{name}}" title="{{name}}" /></a>
+			{{else}}
+				<a href="{{url}}" alt="{{name}}" title="{{name}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+			{{/if}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<div class="author-details">
+				<a href="{{url}}"><h4>{{name}}</h4></a>
+				{{#if bio}}
+					<div class="bio">{{bio}}</div>
+				{{/if}}
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<div class="author-meta">
+				{{#if location}}
+					<div class="location"><i class="glyphicon glyphicon-map-marker"></i>{{location}}</div>
+				{{/if}}
+				{{#if website}}
+					<div class="website"><a href="{{website}}" target="_blank"><i class="glyphicon glyphicon-link"></i>Website</a></div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</section>
+{{/author}}

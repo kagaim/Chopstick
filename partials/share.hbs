@@ -1,0 +1,16 @@
+<section class="cp-social-share pull-right">
+   <span class="share-text">Share:</span>
+	<!-- twitter -->
+    <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Twitter"><i class="fa fa-twitter"></i></a>
+	<!-- facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Facebook"><i class="fa fa-facebook"></i></a>
+	 <!-- google plus -->
+    <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus" title="Google Plus"></i></a>
+	<!-- linkedin -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+	<!-- pinterest -->
+    <a data-pin-do="skipLink" href="https://pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;media={{image}}&amp;description={{{title}}}"
+       onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+      <i class="fa fa-pinterest-p"></i>
+    </a>	
+</section>

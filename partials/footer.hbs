@@ -1,0 +1,33 @@
+<!-- Start of Newsletter Widget -->
+
+{{> widget-newsletter}}
+
+<!-- End of Newsletter Widget -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<div class="footer-links">
+					<p>&copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All right Reserved - Powered by <a href="http://ghost.org" target="blank">Ghost</a></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				{{> footer-socialmedia}}
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#" id="ScrollToTop"><i class="fa fa-angle-up"></i></a><!-- Scroll to Top -->
+{{! jQuery (necessary for Bootstrap's JavaScript plugins) }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+{{! Include all compiled plugins (below), or include individual files as needed }}
+
+{{ghost_foot}}
+
+<script src="{{asset "js/bootstrap.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/plugins.js"}}"></script>
+{{! The main JavaScript file for Chopstick }}
+<script type="text/javascript" src="{{asset "js/index.js"}}"></script>

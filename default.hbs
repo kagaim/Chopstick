@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	{{! Document Settings }}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	{{! Page Meta }}
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+	
+	{{! favicons }}
+	<link rel="apple-touch-icon" href="{{asset "images/apple-touch-icon.png"}}" />
+    <link rel="icon" type="image/png" href="{{asset "images/favicon-32x32.png"}}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{asset "images/favicon-16x16.png"}}" sizes="16x16" />
+	
+	{{! Fonts }}
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	
+	{{! Normalizer }}
+	<link href="{{asset "css/normalize.css"}}" rel="stylesheet">
+	
+    {{! Bootstrap }}
+    <link href="{{asset "css/bootstrap.min.css"}}" rel="stylesheet">
+	
+	{{! Main Stylesheet }}
+    <link href="{{asset "css/style.css"}}" rel="stylesheet">
+	
+	{{! Fontawesome Stylesheet }}
+    <link href="{{asset "css/font-awesome.min.css"}}" rel="stylesheet">
+
+    {{! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries }}
+    {{! WARNING: Respond.js doesn't work if you view the page via file:// }}
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	{{! Chopstick config file }}
+	{{> config}}
+	
+	{{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+  </head>
+  <body class="{{body_class}}">
+    {{! insert header partial}}
+	{{> header}}	
+	
+	{{{body}}}
+	
+	{{! insert footer partial}}
+	{{> footer}}	
+  </body>
+</html>
