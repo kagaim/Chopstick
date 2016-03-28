@@ -21,4 +21,6 @@ _Chopstick_ has been designed and developed with great quality and care, this is
 + Author info box below each post
 + Tag Cover Image, Description and Post Count Support
 
+#### [View Demo](http://bit.ly/demo_chopstick "Chopstick Ghost theme demo")
+
 ##### Thank you for browsing by, for any questions or comments or feedback, I would love to hear from you through this project's Issues tab.
