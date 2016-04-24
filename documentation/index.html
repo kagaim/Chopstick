@@ -1,0 +1,532 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Chopstick - Chopstick Ghost Theme User Documentation</title>
+	
+	<meta name="description" content="Chopstick is a magazine styled theme for Ghost. Chopstick is built on top of Bootstrap framework, which brings flexibility, responsiveness and robustness. ">
+	<meta name="author" content="Kagai Macharia">
+	<meta name="copyright" content="Kagai Macharia">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-10-12T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EFEFEF;color:#1C140D;}
+		::-moz-selection{background:#CBE86B;color:#1C140D;}
+		::selection{background:#CBE86B;color:#1C140D;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#889C48;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: -ms-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: -webkit-gradient(linear, 0 0, 0 CBE86B%, from(#F2E9E1), to(#889C48));
+			  background-image: -webkit-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: -o-linear-gradient(top, #CBE86B, #889C48);
+			  background-image: linear-gradient(top, #CBE86B, #889C48);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBE86B', endColorstr='#889C48', GradientType=0);
+			  border-color: #889C48 #889C48 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #CBE86B #CBE86B #bfbfbf;
+		  background-color: #889C48;
+		}
+		hr{border-top:1px solid #CCCCCC;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#F2E9E1;color:#1C140D;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #FFF6ED;-moz-text-shadow:1px 1px 0px #FFF6ED;text-shadow:1px 1px 0px #FFF6ED;}
+		#documenter_sidebar ul{border-top:1px solid #D1C9C2;}
+		#documenter_sidebar ul a{border-top:1px solid #FFF6ED;border-bottom:1px solid #D1C9C2;color:#1C140D;}
+		#documenter_sidebar ul a:hover{background:#CBE86B;color:#1C140D;border-top:1px solid #CBE86B;}
+		#documenter_sidebar ul a.current{background:#CBE86B;color:#1C140D;border-top:1px solid #CBE86B;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-chopstick">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#installation" title="Installation">Installation</a>
+				<ul>
+					<li><a href="#installation_getting_started">Getting Started</a>
+					<li><a href="#installation_download_and_extract">Download and Extract</a>
+					<li><a href="#installation_configuration">Configuration</a>
+					<li><a href="#installation_installation_nbsp">Installation&nbsp;</a>
+					<li><a href="#installation_demo_data">Demo Data</a>
+				</ul>
+			</li>
+			<li><a href="#widgets" title="Widgets">Widgets</a>
+				<ul>
+					<li><a href="#widgets_sidebar_widgets">Sidebar Widgets</a>
+					<li><a href="#widgets_newsletter_widget">Newsletter Widget</a>
+					<li><a href="#widgets_header_advert_widget">Header Advert Widget</a>
+				</ul>
+			</li>
+			<li><a href="#menu_navigation" title="Menu Navigation">Menu Navigation</a></li>
+			<li><a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Kagai Macharia 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Chopstick</h1>
+	<h2>Chopstick Ghost Theme User Documentation</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>Created: 10/09/2015</li>
+	<li>Latest update: 24/4/2016</li>
+	<li>by: Kagai Macharia</li>
+	<li><a href="http://kagai.me/">kagai.me</a></li>
+	<li>Support: <a href="https://github.com/kagaim/Chopstick/issues" target="_blank">Github Issues</a></li>
+	</ul>
+	<p>Chopstick is the perfect theme for publishers, bloggers and people who have passion for particular subjects and want to share their thoughts with the world.</p>
+	</section>
+	
+	<section id="introduction">
+	<div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+<div>
+	Chopstick is a magazine theme for Ghost, that offers you flexibility and customizability.</div>
+<div>
+	&nbsp;</div>
+<div>
+	This documentation is intended to help you properly install and configure the Chopstick theme on your Ghost site. Kindly go through this file thoroughly, and should you face a challenge beyond the scope of the documentation, do not hesitate to contact me through <a href="https://github.com/kagaim/Chopstick/issues"  target="_blank"><strong>Github Issues</strong></a></div>
+<div>
+	&nbsp;</div>
+<div>
+	I will do my best to reply as promptly as possible.</div>
+<div>
+	&nbsp;</div>
+<div>
+	Also, follow me on <a href="https://twitter.com/kagaim"><strong>Twitter </strong></a>and/ or <a href="https://ke.linkedin.com/in/kagaimacharia" target="_blank"><strong>LinkedIn</strong></a>, to keep up with latest updates and releases.</div>
+</section>
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<h4 id="installation_getting_started">Getting Started</h4>
+<div>
+	If you are new to Ghost, click on the below links to learn more:</div>
+<ul>
+	<li>
+		Ghost Official documentation: http://docs.ghost.org/</li>
+	<li>
+		Ghost Forum: https://ghost.org/forum/</li>
+</ul>
+<h4 id="installation_download_and_extract">Download</h4>
+<p>
+	Download the Chopstick project from Github, here <a href="https://github.com/kagaim/Chopstick" target="_blank">https://github.com/kagaim/Chopstick</a> </p>
+<h4 id="installation_configuration">Configuration</h4>
+<div>
+	There are a few options, you need to configure before uploading the &quot;chopstick folder&quot; to your website.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Open config.hbs (partials/config.hbs) with your favorite text editor(for example, notepad, notepad++, Sublime text etc).</div>
+<div>
+	&nbsp;</div>
+<div>
+	Change the values of the following variables with your own:</div>
+<ol>
+	<li>
+		<div>
+			Enter your disqus_shortname.</div>
+		<ol>
+			<li>
+				<div>
+					To get started with disqus commenting, click here: <a href="https://publishers.disqus.com/engage" target="_blank">https://publishers.disqus.com/engage</a></div>
+			</li>
+			<li>
+				<div>
+					Once you sign up, follow the instructions on how to add disqus to your website and you will be given a <em><strong>&quot;shortname&quot;</strong></em></div>
+			</li>
+			<li>
+				<div>
+					Copy the &quot;shortname&quot; and paste it here var <strong><em>disqus_shortname = &#39;PasteDisqusShortnameHere&#39;;</em></strong> in the <em><strong>config.hbs</strong></em> file</div>
+			</li>
+		</ol>
+	</li>
+	<li>
+		<div>
+			Set the Editor&#39;s Pick Widget</div>
+		<ol>
+			<li>
+				<div>
+					From this variable (<em><strong>var editors_tag = &#39;EnterTagName&#39;;</strong></em>), in the config.hbs file, enter the name of the tag from which posts will be picked for this widget.</div>
+			</li>
+			<li>
+				<div>
+					Also, set the number of posts to be displayed using this variable: <em><strong>var editors_tag_post_count = PostCountHere;</strong></em></div>
+			</li>
+		</ol>
+	</li>
+	<li>
+		<div>
+			Facebook Widget Configuration</div>
+		<div>
+			Enter the URL to your Facebook page here: <em><strong>var fb_page_url = &#39;FacebookPageURL&#39;;</strong></em></div>
+	</li>
+	<li>
+		<div>
+			Mailchimp Settings</div>
+		<ol>
+			<li>
+				<div>
+					Login or sign up to Mailchimp</div>
+			</li>
+			<li>
+				<div>
+					Click on lists</div>
+			</li>
+			<li>
+				<div>
+					If you would like to create a form for an existing list:</div>
+				<ol>
+					<li>
+						<div>
+							Click the <em><strong>drop-down arrow</strong></em> on the right end of the list name</div>
+					</li>
+					<li>
+						<div>
+							Then click on the<em><strong> &quot;Sign-up forms&quot;</strong></em></div>
+					</li>
+					<li>
+						<div>
+							<em><strong>&quot;Select&quot; </strong></em>General Forms</div>
+					</li>
+					<li>
+						<div>
+							Copy the link in the <em><strong>&quot;Sign-up form URL&quot; </strong></em>field and then paste in a new tab on your browser. It will redirect to the form itself. Then copy the link from address bar and use this link.</div>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<div>
+					If you have created a new list, do the following:</div>
+				<ol>
+					<li>
+						<div>
+							Click <em><strong>&quot;Sign-up Forms&quot;</strong></em> link</div>
+					</li>
+					<li>
+						<div>
+							Do steps 3 and 4 from above</div>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<div>
+					Once you have copied the link from the address bar, paste it here <em><strong>var mcform_url = &#39;PasteMailchimpSignupFormLinkHere&#39;;</strong></em></div>
+			</li>
+			<li>
+				<div>
+					Finally you can change the success message on newsletter sign-up here: <em><strong>var msg_success = &#39;Please check your inbox to activate your subscription. Thanks!&#39;; </strong></em>or leave it as default.</div>
+			</li>
+		</ol>
+	</li>
+	<li>
+		<div>
+			Social Media Settings</div>
+		<ol>
+			<li>
+				<div>
+					Enter the links to your social media pages as per below:</div>
+				<ol>
+					<li>
+						<div>
+							<strong>YouTube</strong>: var cp_youtube = &#39;PasteYourYouTubePageAddressHere&#39;;</div>
+					</li>
+					<li>
+						<div>
+							<strong>Instagram</strong>: var cp_instagram = &#39;PasteYourInstagramProfileAddressHere&#39;;</div>
+					</li>
+					<li>
+						<div>
+							<strong>Twitter</strong>: var cp_twitter = &#39;PasteYourTwitterPageAddressHere&#39;;</div>
+					</li>
+					<li>
+						<div>
+							<strong>Google Plus</strong>: var cp_googleplus = &#39;PasteYourGooglePlusPageAddressHere&#39;;</div>
+					</li>
+					<li>
+						<div>
+							<strong>Facebook</strong>: var cp_facebook = &#39;PasteYourFacebookPageAddressHere&#39;;</div>
+						<div>
+							&nbsp;</div>
+						<div>
+							If you do not want to display a particular social media link icon, just leave the variable empty. For example, if I do not want the YouTube icon to display, I will leave the YouTube variable empty like shown below:</div>
+						<div>
+							&nbsp;</div>
+						<div>
+							<em><strong>var cp_youtube = &#39;&#39;;</strong></em></div>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
+<div>
+	Once you are through with the settings, in the config.hbs file, <strong>save it.</strong></div>
+<div>
+	&nbsp;</div>
+<h4 id="installation_installation_nbsp">Installation&nbsp;</h4>
+<p>
+	After making the above changes, do the following:</p>
+<ol>
+	<li>
+		Move the chopstick folder to your ghost server &nbsp;<em><strong>&quot;Themes&quot; </strong></em>folder</li>
+	<li>
+		Restart <strong><em>&quot;Ghost&quot;</em></strong></li>
+	<li>
+		Login to <em><strong>&quot;Ghost Admin&quot; </strong></em>and go to <em><strong>&quot;General Settings&quot;</strong></em></li>
+	<li>
+		Under the <em><strong>Theme section</strong></em>, select <em><strong>Chopstick</strong></em> from the drop-down list</li>
+	<li>
+		Click <em><strong>Save</strong></em> on the top right of the page</li>
+	<li>
+		Visit your website and the theme should be activated</li>
+</ol>
+<h4 id="installation_demo_data">Demo Data</h4>
+<p>
+	From the Github project page we have added a demo folder.</p>
+<div>
+	Inside the folder, you will find <em><strong>chopstick_demo.json</strong></em> file</div>
+<div>
+	Setup the demo data using the following instructions:</div>
+<ol>
+	<li>
+		Go to the labs section of your Ghost installation&#39;s settings (http://example.com/ghost/settings/labs/)</li>
+	<li>
+		Click &#39;Choose File&#39; under Import</li>
+	<li>
+		In the resulting file picker, navigate to wherever you extracted the demo content and select the json file.</li>
+	<li>
+		Click the Import button.</li>
+</ol>
+<p>&nbsp;
+	</p>
+</section>
+<section id="widgets">
+	<div class="page-header"><h3>Widgets</h3><hr class="notop"></div>
+<div>
+	Chopstick comes with 3 widget areas:</div>
+<ol>
+	<li>
+		Sidebar</li>
+	<li>
+		Newsletter</li>
+	<li>
+		Header Advert</li>
+</ol>
+<h4 id="widgets_sidebar_widgets">Sidebar Widgets</h4>
+<div>
+	The sidebar widget area is controlled by the sidebar.hbs file (partials/sidebar.hbs)</div>
+<div>
+	This file controls the following widgets:</div>
+<ol>
+	<li>
+		<strong>Editor&#39;s Pick Widget:</strong> {{&gt; widget-editorspick}}</li>
+	<li>
+		<strong>Advertisement: </strong>{{&gt; widget-sidebarad}}</li>
+	<li>
+		<strong>Podcasts: </strong>{{&gt; widget-podcasts}}</li>
+	<li>
+		<strong>Facebook Page: </strong>{{&gt; widget-facebook}}</li>
+	<li>
+		<strong>Contacts: </strong>{{&gt; widget-contacts}}</li>
+</ol>
+<p>
+	<strong>Order of Widgets Display</strong></p>
+<div>
+	If you want to change the order of display of the widgets, you can cut and paste the respective codes. For example, if I want the Contacts to be the first widget shown in the sidebar, I will do the following:</div>
+<ol>
+	<li>
+		Open <em><strong>sidebar.hbs</strong></em> in my favorite text editor.</li>
+	<li>
+		Cut&nbsp;<em><strong>&quot;{{&gt; widget-contacts}}&quot;</strong></em> and paste it before <em><strong>&quot;{{&gt; widget-editorspick}}&quot;</strong></em></li>
+	<li>
+		Save <em><strong>&quot;sidebar.hbs&quot;</strong></em></li>
+	<li>
+		Reload my ghost blog to check the updates</li>
+</ol>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Disable a widget</strong></div>
+<div>
+	You can also disable a widget by commenting its code.&nbsp;</div>
+<div>
+	For example, if you want to hide<strong> <em>{{&gt; widget-facebook}}</em> </strong>then add<strong> !</strong> like this <em><strong>{{!&gt; widget-facebook}}</strong></em></div>
+<div>
+	Save<strong> &quot;sidebar.hbs&quot;</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Update a Widget</strong></div>
+<div>
+	You can update widgets to show your preferred information. Check below for instructions:</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Editor&#39;s Pick Widget</strong></div>
+<div>
+	Check configuration instructions, above, on how to update this widget</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Advertisement Widget</strong></div>
+<ol>
+	<li>
+		Upload you image advertisement (300*300px) to <em><strong>&quot;assets/images&quot;</strong></em> folder</li>
+	<li>
+		Go to the <em><strong>&quot;Partials&quot;</strong></em> folder and open <em><strong>&quot;widget-sidebarad.hbs&quot;</strong></em> file in your favorite text editor</li>
+	<li>
+		On line 5, change the name <em><strong>&quot;advert_300x300.jpg&quot;</strong></em> to the name of your advert <em><strong>&quot;example_ad.jpg&quot;</strong></em></li>
+	<li>
+		Save <em><strong>&quot;widget-sidebarad.hbs&quot;</strong></em></li>
+</ol>
+<div>
+	<strong>Facebook Widget</strong></div>
+<div>
+	Check configuration instructions, above, on how to update this widget</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Podcasts Widget</strong></div>
+<ol>
+	<li>
+		Go to the<em><strong> &quot;Partials&quot; </strong></em>folder and open <em><strong>&quot;widget-podcasts.hbs&quot; </strong></em>file in your favorite text editor</li>
+	<li>
+		Between line 5 and line 9, remove the current <em><strong>&quot;Soundcloud embed code&quot;</strong></em> and <em><strong>paste your &quot;Soundcloud embed code&quot;</strong></em></li>
+	<li>
+		Save <em><strong>&quot;widget-podcasts.hbs&quot;</strong></em></li>
+</ol>
+<div>
+	<strong>Contacts Widget</strong></div>
+<ol>
+	<li>
+		Go to the<em><strong> &quot;Partials&quot; </strong></em>folder and open<em><strong> &quot;widget-contacts.hbs&quot; </strong></em>file in your favorite text editor</li>
+	<li>
+		Change the content in this file to your correct information</li>
+	<li>
+		Save<em><strong> &quot;widget-contacts.hbs&quot;</strong></em></li>
+</ol>
+<h4 id="widgets_newsletter_widget">Newsletter Widget</h4>
+<div>
+	<strong>How to disable the newsletter widget:</strong></div>
+<ol>
+	<li>
+		Go to <em><strong>&quot;partials&quot; </strong></em>folder and open <em><strong>&quot;footer.hbs&quot;</strong></em> in your favorite text editor</li>
+	<li>
+		Between line 1 and line 5 you will see the code that displays the Newsletter Widget:<em><strong> {{&gt; widget-newsletter}}</strong></em></li>
+	<li>
+		Disable the widget by commenting it out like so, add <strong>! </strong>to <strong>{{&gt; widget-newsletter}} </strong>so that it looks like this <strong>{{!&gt; widget-newsletter}}</strong></li>
+	<li>
+		Save <strong>&quot;footer.hbs&quot;</strong></li>
+</ol>
+<div>
+	<strong>How to configure the Newsletter Widget</strong></div>
+<div>
+	Check configuration instructions, above, on how to update this widget</div>
+<h4 id="widgets_header_advert_widget">Header Advert Widget</h4>
+<ol>
+	<li>
+		How to disable the header advert widget:</li>
+	<li>
+		Go to <em><strong>&quot;partials&quot;</strong></em> folder and open <em><strong>&quot;headerad.hbs&quot;</strong></em> in your favorite text editor</li>
+	<li>
+		Between line 1 and line 5 you will see the code that displays the Header Advert Widget: <strong>{{&gt; widget-headerad}}</strong></li>
+	<li>
+		Disable the widget by commenting it out like so, add<strong> !</strong> to<em><strong> {{&gt; widget-headerad}} </strong></em>so that it looks like this <em><strong>{{!&gt; widget-headerad}}</strong></em></li>
+	<li>
+		Save <em><strong>&quot;headerad.hbs&quot;</strong></em></li>
+</ol>
+<div>
+	<strong>How to update the Header Advertisement</strong></div>
+<ol>
+	<li>
+		Upload you image advertisement (728*90px) to <em><strong>&quot;assets/images&quot;</strong></em> folder</li>
+	<li>
+		Go to the <em><strong>&quot;Partials&quot; </strong></em>folder and open <em><strong>&quot;widget-headerad.hbs&quot;</strong></em> file in your favorite text editor</li>
+	<li>
+		On line 3, change the name <em><strong>&quot;ad_banner_728x90.jpg&quot;</strong></em> to the name of your advert <em><strong>&quot;example_header_ad.jpg&quot;</strong></em></li>
+	<li>
+		Save <em><strong>&quot;widget-headerad.hbs&quot;</strong></em></li>
+</ol>
+</section>
+<section id="menu_navigation">
+	<div class="page-header"><h3>Menu Navigation</h3><hr class="notop"></div>
+<div>
+	Chopstick supports navigation menus using the {{navigation}} helper.</div>
+<div>
+	&nbsp;</div>
+<div>
+	To learn how to add navigation menus to your Ghost Blog, use the following link: <a href="http://support.ghost.org/add-navigation-menu-ghost-blog/" target="_blank"><strong>http://support.ghost.org/add-navigation-menu-ghost-blog/</strong></a></div>
+</section>
+<section id="sources_and_credits">
+	<div class="page-header"><h3>Sources and Credits</h3><hr class="notop"></div>
+<div>
+	We have used the following open source projects or other files as listed.</div>
+<div>
+	<strong>Bootstrap Framework:</strong></div>
+<div>
+	Bootstrap - http://getbootstrap.com/</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>We have used the following fonts:</strong></div>
+<div>
+	Font Awesome - http://fortawesome.github.io/Font-Awesome/</div>
+<div>
+	PT Sans - https://www.google.com/fonts/specimen/PT+Sans</div>
+<div>
+	Droid Serif - https://www.google.com/fonts/specimen/Droid+Serif</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>We have used the following scripts:</strong></div>
+<div>
+	Fitvids - http://fitvidsjs.com/</div>
+<div>
+	GhostHunter - https://github.com/jamalneufeld/ghostHunter</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>We have used images for the demo site from:</strong></div>
+<div>
+	Pixabay - https://pixabay.com/</div>
+</section>
+
+	</div>
+</body>
+</html>
