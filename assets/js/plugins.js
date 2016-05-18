@@ -8,19 +8,25 @@ var pluginApp = {
 		var parent = this;
 		var status = '';
 
-		var getFeed = '/rss/' + page + '/';
+		var FEED_URL = '/rss/' + page + '/';
 
 		$.ajax({
-			url: getFeed,
+			url: FEED_URL,
 			type: 'get',
 			success: function(parsedData) {
 				var cppID = $(parsedData).find('item > guid').text();
-				if(pppID != cppID) {
+				if(pppID != cppID || cppID != 'undefined') {
 					$(parsedData).find('item').each(function(){
 						data.push(this);
 					});
 					parent.getData(page+1, cppID, data);
 				} else {
+					parent.pluginAppPosts(data);
+				}
+			},
+			complete: function(xhr) {
+				console.log(xhr);
+				if (xhr.status == 404){
 					parent.pluginAppPosts(data);
 				}
 			}
