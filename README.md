@@ -1,7 +1,7 @@
 # Chopstick
 #### FREE Ghost Blog Theme
 
-![Ghost version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
+![Ghost version](https://img.shields.io/badge/Ghost-1.x.x-brightgreen.svg?style=flat-square)
 
 We know that the perfect theme for your blog determines the future of your site. Chopstick, a blog style Ghost theme, is designed with only one goal: to give a good first impression to your user.
 
