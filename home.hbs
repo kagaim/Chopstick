@@ -8,8 +8,8 @@
 					{{#foreach posts columns=3}}
 						{{#if @rowStart}}
 						<article class="col-md-12 post-one">
-							{{#if image}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+							{{#if feature_image}}
+								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{img_url feature_image}}" /></a>
 							{{else}}
 								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 							{{/if}}
@@ -43,8 +43,8 @@
 						</article>
 						{{else}}
 						<article class="col-md-6 post-other">
-							{{#if image}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+							{{#if feature_image}}
+								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{img_url feature_image}}" /></a>
 							{{else}}
 								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 							{{/if}}
