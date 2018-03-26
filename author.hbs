@@ -2,13 +2,13 @@
 
 {{! author profile }}
 {{#author}}
-	<section id="author-profile" class="author-profile" {{#if cover}} style="background-image: url({{cover}});" {{/if}}>
+	<section id="author-profile" class="author-profile" {{#if cover_image}} style="background-image: url({{cover_image}});" {{/if}}>
 		<div class="container">
 			<div class="row">
 			<div class="light-overlay"></div>
 				<div class="col-xs-12 col-md-2 author-img">
-					{{#if image}}
-						<img src="{{image}}" class="author-img-avatar" alt="{{name}}" title="{{name}}" />
+					{{#if profile_image}}
+						<img src="{{profile_image}}" class="author-img-avatar" alt="{{name}}" title="{{name}}" />
 					{{else}}
 						<img src="{{asset "images/no-image.jpg"}}" class="author-img-avatar"  />
 					{{/if}}
@@ -50,8 +50,8 @@
 					<article class="col-sm-12 post-other-list">
 						<div class="row">
 							<div class="col-sm-4 post-image">
-								{{#if image}}
-									<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+								{{#if feature_image}}
+									<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{img_url feature_image}}" /></a>
 								{{else}}
 									<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 								{{/if}}

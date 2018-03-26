@@ -2,9 +2,9 @@
 {{#author}}
 <section class="cp-author">
 	<div class="row">
-		<div class="col-md-12 author-img" {{#if cover}} style="background-image: url({{cover}});" {{/if}}>
-			{{#if image}}
-				<a href="{{url}}" alt="{{name}}" title="{{name}}"><img class="author-img-avatar" src="{{image}}" alt="{{name}}" title="{{name}}" /></a>
+		<div class="col-md-12 author-img" {{#if cover_image}} style="background-image: url({{cover_image}});" {{/if}}>
+			{{#if profile_image}}
+				<a href="{{url}}" alt="{{name}}" title="{{name}}"><img class="author-img-avatar" src="{{img_url profile_image}}" alt="{{name}}" title="{{name}}" /></a>
 			{{else}}
 				<a href="{{url}}" alt="{{name}}" title="{{name}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 			{{/if}}

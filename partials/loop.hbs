@@ -7,8 +7,8 @@
 				{{#foreach posts}}
 					{{#if @first}}
 						<article class="col-sm-12 post-one">
-							{{#if image}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+							{{#if feature_image}}
+								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{img_url feature_image}}" /></a>
 							{{else}}
 								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 							{{/if}}
@@ -44,8 +44,8 @@
 						<article class="col-sm-12 post-other-list">
 							<div class="row">
 								<div class="col-sm-4 post-image">
-									{{#if image}}
-										<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+									{{#if feature_image}}
+										<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{img_url feature_image}}" /></a>
 									{{else}}
 										<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 									{{/if}}
