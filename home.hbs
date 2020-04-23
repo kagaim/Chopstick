@@ -8,25 +8,25 @@
 					{{#foreach posts columns=3}}
 						{{#if @rowStart}}
 						<article class="col-md-12 post-one">
-							{{#if image}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+							{{#if feature_image}}
+								<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{img_url}}" /></a>
 							{{else}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+								<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 							{{/if}}
 							<div class="post-content">
 								{{#if "tags"}}
 									<div class="tags">{{tags separator=" | "}}</div>
 								{{/if}}
 								<div class="postone-title">
-									<h2><a href="{{url}}" alt="{{{title}}}" title="{{{title}}}">{{{title}}}</a></h2>
+									<h2><a href="{{url}}" alt="{{title}}" title="{{title}}">{{title}}</a></h2>
 								</div>
 								<div class="meta-info">
-									{{#author}}
+									{{#primary_author}}
 									<span class="author">
 										<i class="fa fa-user"></i>
 										<a href="{{url}}">{{name}}</a>
 									</span>
-									{{/author}}
+									{{/primary_author}}
 									<span class="date">
 										<i class="fa fa-clock-o"></i>
 										{{date format="MMM DD, YYYY"}}
@@ -43,13 +43,13 @@
 						</article>
 						{{else}}
 						<article class="col-md-6 post-other">
-							{{#if image}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+							{{#if feature_image}}
+								<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{img_url}}" /></a>
 							{{else}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+								<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 							{{/if}}
 							<div class="post-content">
-								<h3><a href="{{url}}" alt="{{{title}}}" title="{{{title}}}">{{{title}}}</a></h3>
+								<h3><a href="{{url}}" alt="{{title}}" title="{{title}}">{{title}}</a></h3>
 								<div class="meta-info clearfix">
 									<span class="date pull-left">
 										<i class="fa fa-clock-o"></i>

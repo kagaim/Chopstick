@@ -6,14 +6,14 @@
 			<article class="{{post_class}}">
 				{{#post}}
 					<header class="post-header">
-						<h2>{{{title}}}</h2>
+						<h2>{{title}}</h2>
 						<div class="meta-info">
-							{{#author}}
+							{{#primary_author}}
 							<span class="author">
 								<i class="fa fa-user"></i>
 								<a href="{{url}}">{{name}}</a>
 							</span>
-							{{/author}}
+							{{/primary_author}}
 							<span class="date">
 								<i class="fa fa-clock-o"></i>
 								{{date format="MMM DD, YYYY"}}
@@ -23,8 +23,8 @@
 								<a href="{{url}}#disqus_thread">0 Comments</a>
 							</span>
 						</div>
-						{{#if image}}
-							<img class="featured-image" src="{{image}}" alt="{{{title}}}" title="{{{title}}}" />
+						{{#if feature_image}}
+							<img class="featured-image" src="{{img_url}}" alt="{{title}}" title="{{title}}" />
 						{{else}}
 							<img class="featured-image" src="{{asset "images/no-image.jpg"}}" />
 						{{/if}}

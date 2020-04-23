@@ -1,14 +1,14 @@
 {{!< default}}
 
 {{! author profile }}
-{{#author}}
-	<section id="author-profile" class="author-profile" {{#if cover}} style="background-image: url({{cover}});" {{/if}}>
+{{#foreach authors}}
+	<section id="author-profile" class="author-profile" {{#if cover_image}} style="background-image: url({{cover_image}});" {{/if}}>
 		<div class="container">
 			<div class="row">
 			<div class="light-overlay"></div>
 				<div class="col-xs-12 col-md-2 author-img">
-					{{#if image}}
-						<img src="{{image}}" class="author-img-avatar" alt="{{name}}" title="{{name}}" />
+					{{#if profile_image}}
+						<img src="{{img_url}}" class="author-img-avatar" alt="{{name}}" title="{{name}}" />
 					{{else}}
 						<img src="{{asset "images/no-image.jpg"}}" class="author-img-avatar"  />
 					{{/if}}
@@ -38,7 +38,7 @@
 			</div>
 		</div>
 	</section>
-{{/author}}
+{{/foreach}}
 
 {{! main body post loop }}
 <section id="main-body">
@@ -50,27 +50,27 @@
 					<article class="col-sm-12 post-other-list">
 						<div class="row">
 							<div class="col-sm-4 post-image">
-								{{#if image}}
-									<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+								{{#if feature_image}}
+									<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{img_url}}" /></a>
 								{{else}}
-									<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+									<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 								{{/if}}
 								{{#if featured}}
 									<div class="cp-featured"><i class="glyphicon glyphicon-flash"></i></div>
 								{{/if}}
 							</div>
 							<div class="col-sm-8 post-content">
-								<h3><a href="{{url}}" alt="{{{title}}}" title="{{{title}}}">{{{title}}}</a></h3>
+								<h3><a href="{{url}}" alt="{{title}}" title="{{title}}">{{title}}</a></h3>
 								<div class="post-excerpt">
 									<p>{{excerpt characters="120"}}&hellip;</p>
 								</div>
 								<div class="meta-info">
-									{{#author}}
+									{{#primary_author}}
 									<span class="author">
 										<i class="fa fa-user"></i>
 										<a href="{{url}}" title="{{name}}" alt="{{name}}">{{name}}</a>
 									</span>
-									{{/author}}
+									{{/primary_author}}
 									<span class="date">
 										<i class="fa fa-clock-o"></i>
 										{{date format="MMM DD, YYYY"}}

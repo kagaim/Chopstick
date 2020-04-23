@@ -7,10 +7,10 @@
 				{{#foreach posts}}
 					{{#if @first}}
 						<article class="col-sm-12 post-one">
-							{{#if image}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+							{{#if feature_image}}
+								<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{img_url}}" /></a>
 							{{else}}
-								<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+								<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 							{{/if}}
 							{{#if featured}}
 								<div class="cp-featured"><i class="glyphicon glyphicon-flash"></i></div>
@@ -20,15 +20,15 @@
 									<div class="tags">{{tags separator=" | "}}</div>
 								{{/if}}
 								<div class="postone-title">	
-									<h2><a href="{{url}}" alt="{{{title}}}" title="{{{title}}}">{{{title}}}</a></h2>
+									<h2><a href="{{url}}" alt="{{title}}" title="{{title}}">{{title}}</a></h2>
 								</div>
 								<div class="meta-info">
-									{{#author}}
+									{{#primary_author}}
 									<span class="author">
 										<i class="fa fa-user"></i>
 										<a href="{{url}}">{{name}}</a>
 									</span>
-									{{/author}}
+									{{/primary_author}}
 									<span class="date">
 										<i class="fa fa-clock-o"></i>
 										{{date format="MMM DD, YYYY"}}
@@ -44,27 +44,27 @@
 						<article class="col-sm-12 post-other-list">
 							<div class="row">
 								<div class="col-sm-4 post-image">
-									{{#if image}}
-										<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{image}}" /></a>
+									{{#if feature_image}}
+										<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{img_url}}" /></a>
 									{{else}}
-										<a href="{{url}}" alt="{{{title}}}" title="{{{title}}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
+										<a href="{{url}}" alt="{{title}}" title="{{title}}"><img src="{{asset "images/no-image.jpg"}}" /></a>
 									{{/if}}
 									{{#if featured}}
 										<div class="cp-featured"><i class="glyphicon glyphicon-flash"></i></div>
 									{{/if}}
 								</div>
 								<div class="col-sm-8 post-content">
-									<h3><a href="{{url}}" alt="{{{title}}}" title="{{{title}}}">{{{title}}}</a></h3>
+									<h3><a href="{{url}}" alt="{{title}}" title="{{title}}">{{title}}</a></h3>
 									<div class="post-excerpt">
 										<p>{{excerpt characters="120"}}&hellip;</p>
 									</div>
 									<div class="meta-info">
-										{{#author}}
-										<span class="author">
-											<i class="fa fa-user"></i>
-											<a href="{{url}}" title="{{name}}" alt="{{name}}">{{name}}</a>
-										</span>
-										{{/author}}
+										{{#primary_author}}
+											<span class="author">
+												<i class="fa fa-user"></i>
+												<a href="{{url}}" title="{{name}}" alt="{{name}}">{{name}}</a>
+											</span>
+										{{/primary_author}}
 										<span class="date">
 											<i class="fa fa-clock-o"></i>
 											{{date format="MMM DD, YYYY"}}
