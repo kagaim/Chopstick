@@ -1,5 +1,6 @@
 {
-	"name" : "chopstick",
+    "name" : "chopstick",
+    "description": "Chopstick has been designed and developed with great quality and care, this is so that, publishers, bloggers and people who have passion for particular subjects, can have the perfect theme to share their thoughts with the world.",
     "version": "2.0.0",
     "engines": {
         "ghost": ">=3.0.0",
